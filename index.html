@@ -1,9 +1,57 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    
+    <title>날씨 예보</title>
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/selectArea.css">
+    <link rel="stylesheet" href="css/selectedArea.css">
+
+    <script src="js/api.js"></script>
   
 </head>
 <body>
-Hello, world!
+    <div id="title"> 날씨 예보 </div>
+    <div id="totalContent"> 
+        <div id="selectArea" > 
+            <div id="selectAreatitle"> 지역 선택하기  </div>
+            <div id="map"> <img src="image/korea.png"> </div>
+            <div id="areaName"> 
+                <div id="seoul" onclick="fetchData('seoul')"> 서울 </div>
+                <div id="Incheon" onclick="fetchData('Incheon')"> 인천 </div>
+                <div id="Suwon" onclick="fetchData('Suwon')"> 수원 </div>
+                <div id="Yongin" onclick="fetchData('Yongin')"> 용인 </div>
+                <div id="Daejeon" onclick="fetchData('Daejeon')"> 대전 </div>
+                <div id="Jeollagnam-do" onclick="fetchData('Jeollanam-do')"> 청주 </div>
+                <div id="Gyeongsangbuk-do" onclick="fetchData('Gyeongsangbuk-do')"> 경상북도 </div>
+                <div id="Gyeongsanggnam-do" onclick="fetchData('Gyeongsangnam-do')"> 경상남도 </div>
+                <div id="Chungcheongnam-do" onclick="fetchData('Chungcheongnam-do')"> 충청남도 </div>
+            </div>
+            
+        </div>
+    
+        <div id="selectedArea" >
+            <div id="selectedAreatitle" > <span id="areaTitle"> </span>의 날씨  </div>
+
+            <div id="weatherImg"> </div>
+            <div id="presentTempArea">  </div>
+            <div id="detail">  
+                <div id="feelslikeArea">  </div> 
+                <div id="humidityArea"> </div> 
+                <div id="windArea"></div> 
+            </div>
+           
+    
+            
+    
+          
+            
+            
+    
+        </div>
+
+    </div>
+   
 </body>
 </html>
