@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <script>
+      const serviceKey = '82aOU05J6cMHuqUIFtUQrr0s%2BJ%2BS%2FlGQzQE1m3a7fHJJ4og4ryLKv3d4vp75QUTPSqg23U3s7X9zykrkBf5Fyw%3D%3D'; // 여기에 실제 서비스키를 입력해야 합니다.
+const pageNo = 1;
+const numOfRows = 10; // 한 페이지 결과 수, 필요에 따라 수정 가능
+const dataType = 'JSON'; // 응답 데이터 형식 (XML 또는 JSON)
+
+const base_date = '20240620'; // 발표일자
+const base_time = '0600'; // 발표시각 (정시단위)
+
+const nx = 55; // 예보지점 X 좌표
+const ny = 127; // 예보지점 Y 좌표
+
+const apiUrl = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst?serviceKey=${serviceKey}&pageNo=${pageNo}&numOfRows=${numOfRows}&dataType=${dataType}&base_date=${base_date}&base_time=${base_time}&nx=${nx}&ny=${ny}`;
+
+fetch(apiUrl)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log(data); // 실제 JSON 데이터 출력
+        console.log(data.response.body.items.item[5])
+    })
+    .catch(err => console.error('Fetch error:', err));
+    </script>
+  
+</head>
+<body>
+    
+   
+</body>
+</html>
