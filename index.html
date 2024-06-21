@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="css/selectArea.css">
     <link rel="stylesheet" href="css/selectedArea.css">
     <link rel="stylesheet" href="css/weatherComparison.css">
+    <link rel="stylesheet" href="css/comparison.css">
 
-    <script src="js/api.js"></script>
+    <script src="js/selectArea.js"></script>
     <script src="js/windowload.js"></script>
+    <script src="js/comparison.js"></script>
   
 </head>
 <body>
-    <div id="title"> 날씨 예보 </div>
+    <div id="title"> <img src="image/logo.png" width="100px"> 날씨 예보 </div>
     <div id="totalContent"> 
         <div id="selectArea" > 
             <div id="selectAreatitle"> 지역 선택하기  </div>
             <div id="map"> <img src="image/korea.png"> </div>
             <div id="areaName"> 
                 <div id="seoul" class="area" onclick="fetchData('seoul')"> 서울 </div>
+
                 <div id="Incheon" class="area" onclick="fetchData('Incheon')"> 인천 </div>
                 <div id="Namyangju" class="area" onclick="fetchData('Namyangju')"> 남양주 </div>
                 <div id="Yongin" class="area" onclick="fetchData('Yongin')"> 용인 </div>
@@ -48,7 +51,7 @@
                 <div id="Jinju" class="area" onclick="fetchData('Jinju')"> 진주 </div>
 
                 <div id="jeju" class="area" onclick="fetchData('jeju')"> 제주도 </div>
-                <div id="ulleungdo" class="area"> 울릉도/독도 </div>
+                <div id="ulchin" class="area" onclick="fetchData('ulchin')"> 울릉도/독도 </div>
 
             </div>
             
@@ -77,7 +80,38 @@
         </div>
 
         <div id="weatherComparison">
-            <div id="weatherComparisonTitle"> 날씨 비교 </div>
+            <div id="weatherComparisonHead"> 
+                <div id="weatherComparisonTitle"> 다른 지역과 비교하기 </div>
+                <div id="selectComparison"> 
+                    <select id="citiesSelect" onchange="comparison(value)">
+                        <option value="" disabled> 선택 </option>
+                        <option value="seoul"> 서울 </option>
+                        <option value="Incheon"> 인천 </option>
+                        <option value="Namyangju"> 남양주 </option>
+                        <option value="Yongin"> 용인 </option>
+                        <option value="gangneung"> 강릉 </option>
+                        <option value="chuncheon"> 춘천 </option>
+                        <option value="wonju"> 원주 </option>
+                        <option value="cheongju"> 청주 </option>
+                        <option value="cheonan"> 천안 </option>
+                        <option value="daejeon"> 대전 </option>
+                        <option value="sejong"> 세종 </option>
+                        <option value="gwangju"> 광주 </option>
+                        <option value="suncheon"> 순천 </option>
+                        <option value="jeonju"> 전주 </option>
+                        <option value="pohang"> 포항 </option>
+                        <option value="andong"> 안동 </option>
+                        <option value="daegu"> 대구 </option>
+                        <option value="busan"> 부산 </option>
+                        <option value="ulsan"> 울산 </option>
+                        <option value="Jinju"> 진주 </option>
+                        <option value="jeju"> 제주도 </option>
+                        <option value="ulchin"> 울릉도/독도 </option>
+                    </select>
+                </div>
+            </div>
+            
+            <div id="infoDef"> </div>
         </div>
 
     </div>

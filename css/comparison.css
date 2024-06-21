@@ -1,0 +1,52 @@
+#weatherComparisonHead {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#weatherComparisonTitle {
+    display: inline-block;
+}
+
+#citiesSelect {
+    display: inline-block;
+}
+
+#infoDef {
+    font-family: 'ONE-Mobile-Regular';
+}
+
+#subTemp {
+    font-family: 'TmoneyRoundWindExtraBold';
+    font-size: 35px;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    left: 180px;
+    color: #2AA9D2;
+}
+
+#defTemp {   
+    height: 20px;
+    position: absolute;
+    width: 300px;
+    font-size: 20px;
+    text-align: center;
+    top: 110px;
+    left: 100px;
+}
+
+#infoDef img {   
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+#citiesSelect {
+    font-size: 17px;
+    font-family: 'ONE-Mobile-Regular';
+    width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+

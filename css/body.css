@@ -6,28 +6,11 @@
 }
 
 @font-face {
-    font-family: 'NanumBarunGothic';
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
-    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
-   }
-   
-@font-face {
-    font-family: 'NanumBarunGothic';
-    font-style: normal;
-    font-weight: 700;
-    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
-    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
-   }
-   
-@font-face {
-    font-family: 'NanumBarunGothic';
-    font-style: normal;
-    font-weight: 300;
-    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
-    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
-   }
+}
    
 .nanumbarungothic * {
     font-family: 'NanumBarunGothic', sans-serif;
@@ -36,14 +19,8 @@
 body {
     font-family: 'TmoneyRoundWindExtraBold';
     width: 100%;
-    background-color: rgb(156, 209, 255);
+    background-color : #9fc9f0c5;
     overflow-x: hidden;
-}
-
-#title {
-    font-size: 80px;
-    text-align: center;
-    margin : 60px 0 30px 0;
 }
 
 #totalContent {
@@ -51,5 +28,17 @@ body {
     height: 700px;
     margin: 0 auto;
     position: relative;
+}
+
+#title {
+    font-size: 80px;
+    text-align: center;
+    margin : 60px 0 30px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#title img {
+    vertical-align: top;
 }
 

@@ -1,4 +1,11 @@
+let isDataFetched = false;
+
 function fetchData(value) {
+  const infoDef = document.getElementById("infoDef");
+  infoDef.innerHTML = '';
+
+  document.getElementById('citiesSelect').selectedIndex = 0;
+
   console.log(value);
   const check = document.getElementById("weatherImg");
 
@@ -12,6 +19,10 @@ function fetchData(value) {
   const dailyWeathercontainer = document.getElementById("dailyWeather");
   dailyWeathercontainer.innerHTML = '';
   console.log(dailyWeathercontainer);
+
+  const weatherIconArea = document.getElementById("weatherImg");
+  weatherIconArea.innerHTML = '';
+  
 
   const urls = [
     `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=4d1d3d545226f90460923b749c610c2e`,
@@ -45,14 +56,8 @@ function fetchData(value) {
         case 'cheongju':
             koreanName = '청주';
             break;
-        case 'chungju':
-            koreanName = '충주';
-            break;
         case 'cheonan':
             koreanName = '천안';
-            break;
-        case 'gongju':
-            koreanName = '공주';
             break;
         case 'daejeon':
             koreanName = '대전';
@@ -69,17 +74,11 @@ function fetchData(value) {
         case 'jeonju':
             koreanName = '전주';
             break;
-        case 'yeosu':
-            koreanName = '여수';
-            break;
         case 'pohang':
             koreanName = '포항';
             break;
         case 'andong':
             koreanName = '안동';
-            break;
-        case 'gyeongju':
-            koreanName = '경주';
             break;
         case 'daegu':
             koreanName = '대구';
@@ -90,10 +89,13 @@ function fetchData(value) {
         case 'ulsan':
             koreanName = '울산';
             break;
+        case 'jinju':
+            koreanName = '진주';
+            break;
         case 'jeju':
             koreanName = '제주도';
             break;
-        case 'ulleungdo-dokdo':
+        case 'ulchin':
             koreanName = '울릉도/독도';
             break;
         default:
@@ -118,11 +120,11 @@ function fetchData(value) {
 
       //현재 기온
       const presentTempArea = document.getElementById("presentTempArea");
-      presentTempArea.innerHTML = (presentWeatherList.main.temp/ 10).toFixed(1);
+      presentTempArea.innerHTML = (presentWeatherList.main.temp/ 10).toFixed(1) +'°C';
 
       // 체감 온도
       const feelslike = document.getElementById("feelslikeArea");
-      feelslike.innerHTML = '체감&nbsp;(' + (presentWeatherList.main.feels_like / 10).toFixed(1) +')';
+      feelslike.innerHTML = '체감&nbsp;(' + (presentWeatherList.main.feels_like / 10).toFixed(1) +'°C)';
 
       //습도 
       const humidity = document.getElementById("humidityArea");
@@ -136,8 +138,12 @@ function fetchData(value) {
       console.log(presentWeatherList);
       console.log(presentWeatherList.weather[0].icon);
       const weatherIconArea = document.getElementById("weatherImg");
+
+      while (weatherIconArea.firstChild) {
+        weatherIconArea.removeChild(weatherIconArea.firstChild);
+      }
+
       const weatherIcon = document.createElement("img");
-      
      
       weatherIcon.src = 'image/' + presentWeatherList.weather[0].icon + '.png';
       weatherIconArea.appendChild(weatherIcon);
@@ -171,10 +177,16 @@ function fetchData(value) {
         return `${period} ${displayHour} 시 `;
       }
 
+      const hourlyWeatherarea = document.getElementById("hourlyWeather");
+      while (hourlyWeatherarea.firstChild) {
+        hourlyWeatherarea.removeChild(hourlyWeatherarea.firstChild);
+      }
+
       // 결과 호출 
       hourlyWeatherArray.forEach(item => {
-        const hourlyWeatherarea = document.getElementById("hourlyWeather");
+        
         console.log(hourlyWeatherarea);
+
 
         //시간대 별 아이콘 송출
         const container = document.createElement("div");
@@ -214,6 +226,7 @@ function fetchData(value) {
         hour.textContent = formatHour;
         container.appendChild(hour);
 
+        
         // 최종적으로 출력
         hourlyWeatherarea.appendChild(container);
       });
@@ -299,9 +312,14 @@ function fetchData(value) {
       }
       
       console.log(selectHourArray);
+
+      const dailyWeatherArea = document.getElementById("dailyWeather");
+      while (dailyWeatherArea.firstChild) {
+        dailyWeatherArea.removeChild(dailyWeatherArea.firstChild);
+      }
       
       selectHourArray.forEach(item => {
-        const dailyWeatherArea = document.getElementById("dailyWeather");
+        
         console.log(dailyWeatherArea);
 
         const container = document.createElement("div");
@@ -363,30 +381,3 @@ function fetchData(value) {
     .catch(error => console.error('Error fetching data:', error));
 
   }
-
-
-/*
- hourlyWeatherArray.forEach(item => {
-        const hourlyWeatherarea = document.getElementById("hourlyWeather");
-        console.log(hourlyWeatherarea);
-
-        //시간대 별 아이콘 송출
-        const container = document.createElement("div");
-        container.id = "dayHourContainer";
-        const img = document.createElement('img');
-        
-        img.src = `image/${item.iconUrl}.png`; 
-        img.alt = 'Weather Icon'; 
-        
-        container.appendChild(img); 
-
-        //시간대 별 기온 송출
-        const tempSpan = document.createElement("span");
-        tempSpan.id = "hourlyWeatherTemp";
-        const temp = item.temp;
-        tempSpan.textContent = (temp/10).toFixed(1);
-        container.appendChild(tempSpan);
-
-        // 줄바꿈(br) 요소 추가
-        container.appendChild(document.createElement('br'));
-*/
