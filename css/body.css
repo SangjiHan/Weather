@@ -18,9 +18,16 @@
 
 body {
     font-family: 'TmoneyRoundWindExtraBold';
-    width: 100%;
-    background-color : #9fc9f0c5;
-    overflow-x: hidden;
+    height: 100%;
+    background-color: #9fc9f0c5;
+    overflow-y: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 #totalContent {
