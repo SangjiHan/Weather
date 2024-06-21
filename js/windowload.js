@@ -1,4 +1,7 @@
-window.onload = function() {
+window.addEventListener("load", function() {
+
+    fetchData('Yongin');
+
     let areaList = ['seoul', 'Incheon', 'Namyangju', 'Yongin', 'gangneung', 'chuncheon', 'wonju', 'cheongju', 'cheonan', 'daejeon', 'sejong', 'gwangju', 'suncheon', 'jeonju', 'pohang', 'andong', 'daegu', 'busan', 'ulsan', 'Jinju', 'jeju','ulchin'];
 
     function getKoreanName(cityName) {
@@ -96,29 +99,24 @@ window.onload = function() {
                 const areaDiv = document.getElementById(cityName);
                 areaDiv.innerHTML = '';
                 
-                // Create image element
                 const img = document.createElement('img');
                 img.src = `image/${icon}.png`;
                 img.style.width = '25px';
                 img.style.marginTop = '2px';
                 areaDiv.appendChild(img);
 
-                // Create temperature element
                 const tempDiv = document.createElement('div');
                 tempDiv.textContent = `${temperature}°C`;
                 tempDiv.style.fontSize = '12px';
                 tempDiv.style.marginTop = '2px';
                 areaDiv.appendChild(tempDiv);
 
-                // Create Korean name element
                 const nameDiv = document.createElement('div');
                 nameDiv.textContent = koreanName;
                 nameDiv.style.fontSize = '12px';
                 nameDiv.style.marginTop = '2px';
                 areaDiv.appendChild(nameDiv);
                 
-
-                // Additional styling
                 areaDiv.style.width = '40px';
                 areaDiv.style.height = '70px';
             })
@@ -130,6 +128,4 @@ window.onload = function() {
     areaList.forEach(cityId => {
         loadWeather(cityId);
     });
-
-    fetchData('Yongin');
-};
+});

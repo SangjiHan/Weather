@@ -1,6 +1,7 @@
 let isDataFetched = false;
 
 function fetchData(value) {
+  
   console.log(value);
   const infoDef = document.getElementById("infoDef");
   infoDef.innerHTML = '';

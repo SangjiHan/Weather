@@ -1,3 +1,6 @@
+#weatherComparison {
+    animation: fade-in 3s;
+}
 #weatherComparisonHead {
     display: flex;
     align-items: center;
