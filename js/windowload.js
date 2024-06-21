@@ -90,12 +90,9 @@ window.onload = function() {
                 return response.json();
             })
             .then(data => {
-                console.log(`Weather data for ${cityName}:`, data);
                 const koreanName = getKoreanName(cityName);
                 const temperature = (data.main.temp / 10).toFixed(1);
-                console.log(temperature);
                 const icon = data.weather[0].icon;
-                console.log(icon)
                 const areaDiv = document.getElementById(cityName);
                 areaDiv.innerHTML = '';
                 

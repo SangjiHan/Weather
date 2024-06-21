@@ -11,6 +11,7 @@ function comparison(value) {
 }
 
 function comparisonTemp(data) {
+    console.log(data);
     const mainArea = document.getElementById("presentTempArea");
     const mainAreaTemp = mainArea.innerText.slice(0, -2); 
     const subAreaTemp = (data.main.temp / 10).toFixed(1);
@@ -39,7 +40,6 @@ function comparisonTemp(data) {
     const subIcon = document.createElement("img");
     subIcon.id = "subIcon";
     const subIconsrc = data.weather[0].icon;
-    console.log(subIconsrc);
 
     subIcon.src = "image/" + subIconsrc + ".png";
     subIcon.style.width = "80px";

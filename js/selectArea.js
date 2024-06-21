@@ -1,24 +1,21 @@
 let isDataFetched = false;
 
 function fetchData(value) {
+  console.log(value);
   const infoDef = document.getElementById("infoDef");
   infoDef.innerHTML = '';
 
   document.getElementById('citiesSelect').selectedIndex = 0;
 
-  console.log(value);
   const check = document.getElementById("weatherImg");
 
-  console.log(check)
   check.innerHTML = '';
 
   const hourlyWeathercontainer = document.getElementById("hourlyWeather");
   hourlyWeathercontainer.innerHTML = '';
-  console.log(hourlyWeathercontainer);
 
   const dailyWeathercontainer = document.getElementById("dailyWeather");
   dailyWeathercontainer.innerHTML = '';
-  console.log(dailyWeathercontainer);
 
   const weatherIconArea = document.getElementById("weatherImg");
   weatherIconArea.innerHTML = '';
@@ -99,20 +96,15 @@ function fetchData(value) {
             koreanName = '울릉도/독도';
             break;
         default:
-            koreanName = value; // Use the default value if no match is found
+            koreanName = value; 
     }
 
-  // 각각의 API 요청을 fetch하여 Promise 배열 생성
   const data = urls.map(url => fetch(url).then(response => response.json()));
 
   // Promise.all을 사용하여 모든 데이터가 준비될 때까지 기다림
   Promise.all(data)
     .then(dataArray => {
       const [presentWeatherList, hourlyWeatherList] = dataArray;
-
-      
-      console.log(hourlyWeatherList);
-
       
       //한국 지역명 
       const areaTitle = document.getElementById("areaTitle");
@@ -135,8 +127,6 @@ function fetchData(value) {
       windArea.innerHTML = '바람 &nbsp' + presentWeatherList.wind.speed + 'm' + '&#47;' +'s';
 
       //아이콘
-      console.log(presentWeatherList);
-      console.log(presentWeatherList.weather[0].icon);
       const weatherIconArea = document.getElementById("weatherImg");
 
       while (weatherIconArea.firstChild) {
@@ -159,7 +149,6 @@ function fetchData(value) {
         hourlyWeatherArray.push({ date, iconUrl, temp });
       }
 
-      console.log(hourlyWeatherArray);
 
       function formatDateDay(date) {
         const day = date.getDate(); // 날짜 (일)
@@ -184,10 +173,7 @@ function fetchData(value) {
 
       // 결과 호출 
       hourlyWeatherArray.forEach(item => {
-        
-        console.log(hourlyWeatherarea);
-
-
+  
         //시간대 별 아이콘 송출
         const container = document.createElement("div");
         container.id = "dayHourContainer";
@@ -235,12 +221,8 @@ function fetchData(value) {
 
 
       //데일리 날씨
-
       const today = new Date();
-      console.log(today);
-
       const hour = ('0' + today.getHours()).slice(-2); 
-      console.log(hour);
 
       let selectHour = 0; 
       //일치하는 시간대
@@ -271,9 +253,6 @@ function fetchData(value) {
           default:
               selectHour = 0; 
       }
-
-      console.log(selectHour);
-
 
       const selectHourArray = [];
 
@@ -310,8 +289,6 @@ function fetchData(value) {
           break;
         }
       }
-      
-      console.log(selectHourArray);
 
       const dailyWeatherArea = document.getElementById("dailyWeather");
       while (dailyWeatherArea.firstChild) {
@@ -319,8 +296,6 @@ function fetchData(value) {
       }
       
       selectHourArray.forEach(item => {
-        
-        console.log(dailyWeatherArea);
 
         const container = document.createElement("div");
         container.id = "dayHourContainer";
@@ -371,12 +346,9 @@ function fetchData(value) {
          // 줄바꿈(br) 요소 추가
          container.appendChild(document.createElement('br'));
 
-        
-
         dailyWeatherArea.appendChild(container);
       });
       
-
     })
     .catch(error => console.error('Error fetching data:', error));
 
