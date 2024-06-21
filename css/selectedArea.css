@@ -8,17 +8,23 @@
 
 #selectedArea {
     width: 400px;
-    height: 400px;
-    float: right;
-    border-bottom: 3px dashed rgb(129, 129, 129);
-    position: relative;
+    height: 500px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: white;
 }
 
 
 #selectedAreatitle {
     font-size: 30px;
     padding: 10px;
-    font-family: 'TmoneyRoundWindExtraBold'
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #weatherImg {
@@ -105,16 +111,33 @@
 #hourlyWeather {
     width: 400px;
     height: 130px;
-    overflow-x: auto; 
-    overflow-y: hidden; 
+    overflow-x: auto;  
+    overflow-y: hidden;  
     white-space: nowrap; 
-    background-color: rgba(103, 168, 253, 0.712);
     display: block;
     align-items: center;
     justify-content: center;
-    padding: 10px; 
+    padding: 10px 5px 0 5px;
     box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-top: 1px dashed gray;
 }
+
+#hourlyWeather::-webkit-scrollbar {
+    height: 5px;
+}
+
+#hourlyWeather::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 173, 173);
+    height: 5px;
+}
+
+#hourlyWeather::-webkit-scrollbar-thumb {
+    height: 5px;
+}
+
 
 #hourlyWeather img {
     width: 50px; 
@@ -128,11 +151,59 @@
     display: inline-block;
     margin-right: 10px;
     white-space: normal; 
-   
     box-sizing: border-box;
 }
 
 #hourlyWeather #hourlyWeatherDay,
 #hourlyWeather #hourlyWeatherHour {
     font-size: 13px; 
+}
+
+#hourlyWeather #hourlyWeatherTemp {
+    font-size: 13px;
+    color: rgb(53, 161, 255);
+}
+
+
+#dailyWeather {
+    width: 400px;
+    height: 150px;
+    white-space: nowrap; 
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-top: 1px dashed gray;
+    padding-top: 10px;
+}
+
+#dailyWeather img {
+    width: 60px;
+    display: block; 
+    margin: 0 auto; 
+}
+
+#dailyWeather div {
+    text-align: center;
+    font-family: 'NanumBarunGothic';
+    width: 90px;
+    height: 130px;
+    display: inline-block;
+    margin-right: 10px;
+    white-space: normal;
+}
+
+#dailyWeather #dailyWeatherDay,
+#dailyWeather #dailyWeatherHour {
+    font-size: 13px; 
+}
+
+#dailyWeather #dailyWeatherTemp {
+    font-size: 13px;
+    color: rgb(55, 175, 255);
+}
+
+#dailyWeather #dailyWeatherContext {
+    font-size: 15px;
+    color: blue;
 }

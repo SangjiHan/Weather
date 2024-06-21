@@ -1,20 +1,11 @@
-#totalContent {
-    width: 804px;
-    height: 600px;
-    border: 2px solid black;
-    border-radius: 30px;
-    margin: 0 auto;
-    position: relative;
-}
-
-
 #selectArea {
-    width: 400px;
-    border-right: 3px dashed rgb(129, 129, 129);
-    border-bottom: 3px dashed rgb(129, 129, 129);
-    height: 400px;
-    float: left;
+    width: 450px;
+    border: 5px solid rgb(0, 0, 0);
+    height: 690px;
     position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: white;
 }
 
 #areaName {
@@ -30,15 +21,137 @@
 
 #map {
     text-align: center;
-    position: relative;
 }
 
 #map img {
-    height: 340px;
-    position: relative; 
+    height: 640px;
 }
 
 #selectAreatitle {
     font-size: 30px;
     padding: 10px;
+    text-align: center;
+}
+
+.area {
+    position: absolute;
+    width: 35px;
+    height: 60px;
+    border: 1px solid black;
+    font-family: 'NanumBarunGothic';
+    border-radius: 18px;
+    text-align: center;
+    background-color: rgb(88, 88, 255);
+    color: white;
+}
+
+
+#seoul {
+    top: 120px;
+    left: 132px
+}
+
+#Incheon {
+    top: 110px;
+    left: 92px
+}
+
+#Yongin {
+    top : 150px;
+    left : 170px;
+}
+
+#Namyangju {
+    top: 80px;
+    left : 170px;
+}
+
+#gangneung {
+    top: 100px;
+    left : 300px;
+}
+
+#chuncheon {
+    top: 80px;
+    left : 220px;
+}
+
+#wonju {
+    top: 150px;
+    left: 220px;
+}
+
+#cheongju {
+    top: 215px;
+    left: 198px;
+}
+
+#daejeon {
+    top: 260px;
+    left: 160px;
+}
+
+#sejong {
+    top:202px;
+    left:140px;
+}
+
+#cheonan {
+    top:230px;
+    left:100px;
+}
+
+#gwangju {
+    top:390px;
+    left:115px;
+}
+
+#suncheon {
+    top:410px;
+    left:160px;
+}
+
+#jeonju {
+    top:325px;
+    left:150px;
+}
+
+#pohang {
+    top: 280px;
+    left: 350px
+}
+
+#daegu {
+    top: 310px;
+    left: 275px
+}
+
+#andong {
+    top: 230px;
+    left: 280px
+}
+
+#ulsan {
+    top: 342px;
+    left: 340px
+}
+
+#busan {
+    top: 380px;
+    left: 300px
+}
+
+#Jinju {
+    top: 370px;
+    left: 240px
+}
+
+#jeju {
+    top: 575px;
+    left: 90px
+}
+
+#ulleungdo{
+    top: 150px;
+    left: 390px
 }

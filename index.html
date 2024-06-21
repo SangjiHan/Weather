@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/selectArea.css">
     <link rel="stylesheet" href="css/selectedArea.css">
+    <link rel="stylesheet" href="css/weatherComparison.css">
 
     <script src="js/api.js"></script>
+    <script src="js/windowload.js"></script>
   
 </head>
 <body>
@@ -18,15 +20,36 @@
             <div id="selectAreatitle"> 지역 선택하기  </div>
             <div id="map"> <img src="image/korea.png"> </div>
             <div id="areaName"> 
-                <div id="seoul" onclick="fetchData('seoul')"> 서울 </div>
-                <div id="Incheon" onclick="fetchData('Incheon')"> 인천 </div>
-                <div id="Suwon" onclick="fetchData('Suwon')"> 수원 </div>
-                <div id="Yongin" onclick="fetchData('Yongin')"> 용인 </div>
-                <div id="Daejeon" onclick="fetchData('Daejeon')"> 대전 </div>
-                <div id="Jeollagnam-do" onclick="fetchData('Jeollanam-do')"> 청주 </div>
-                <div id="Gyeongsangbuk-do" onclick="fetchData('Gyeongsangbuk-do')"> 경상북도 </div>
-                <div id="Gyeongsanggnam-do" onclick="fetchData('Gyeongsangnam-do')"> 경상남도 </div>
-                <div id="Chungcheongnam-do" onclick="fetchData('Chungcheongnam-do')"> 충청남도 </div>
+                <div id="seoul" class="area" onclick="fetchData('seoul')"> 서울 </div>
+                <div id="Incheon" class="area" onclick="fetchData('Incheon')"> 인천 </div>
+                <div id="Namyangju" class="area" onclick="fetchData('Namyangju')"> 남양주 </div>
+                <div id="Yongin" class="area" onclick="fetchData('Yongin')"> 용인 </div>
+
+                <div id="gangneung" class="area" onclick="fetchData('gangneung')"> 강릉 </div>
+                <div id="chuncheon" class="area" onclick="fetchData('chuncheon')"> 춘천 </div>
+                <div id="wonju" class="area" onclick="fetchData('wonju')"> 원주 </div>
+
+                <div id="cheongju" class="area" onclick="fetchData('cheongju')"> 청주</div>
+                <div id="cheonan" class="area" onclick="fetchData('cheonan')"> 천안 </div>
+                <div id="daejeon" class="area" onclick="fetchData('daejeon')"> 대전 </div>
+                <div id="sejong" class="area" onclick="fetchData('sejong')"> 세종 </div>
+
+                <div id="gwangju" class="area" onclick="fetchData('gwangju')"> 광주 </div>
+                <div id="suncheon" class="area" onclick="fetchData('suncheon')"> 순천 </div>
+                <div id="jeonju" class="area" onclick="fetchData('jeonju')"> 전주 </div>
+
+                <div id="pohang" class="area" onclick="fetchData('pohang')"> 포항 </div>
+                <div id="andong" class="area" onclick="fetchData('andong')"> 안동 </div>
+                
+
+                <div id="daegu" class="area" onclick="fetchData('daegu')"> 대구 </div>
+                <div id="busan" class="area" onclick="fetchData('busan')"> 부산 </div>
+                <div id="ulsan" class="area" onclick="fetchData('ulsan')"> 울산 </div>
+                <div id="Jinju" class="area" onclick="fetchData('Jinju')"> 진주 </div>
+
+                <div id="jeju" class="area" onclick="fetchData('jeju')"> 제주도 </div>
+                <div id="ulleungdo" class="area"> 울릉도/독도 </div>
+
             </div>
             
         </div>
@@ -46,7 +69,15 @@
             <div id="hourlyWeather">
 
             </div>
+
+            <div id="dailyWeather">
+
+            </div>
     
+        </div>
+
+        <div id="weatherComparison">
+            <div id="weatherComparisonTitle"> 날씨 비교 </div>
         </div>
 
     </div>
