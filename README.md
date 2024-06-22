@@ -1,9 +1,5 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:4682B4,100:AFEEEE&height=200&text=실시간%20날씨%20정보&fontColor=778899&fontSize=40&width=700&fontAlignY=35)
 
-
- https://sangjihan.github.io/weather/
-
-
  ![날씨](https://github.com/SangjiHan/weather/assets/133099077/31ddbb8c-3107-44c0-ba9a-be8929283d04)
 
 
@@ -11,7 +7,7 @@
 
  
 
- # 프로젝트 기간 : 2024.06 <br/><br/><br/>  
+ 프로젝트 기간 : 2024.06 <br/><br/><br/>  
 
  # 프로젝트 목표  
  사용자가 빠르고 간편하게 날씨 정보를 얻기 위함  <br/><br/><br/> 
@@ -24,8 +20,11 @@
  다른 지역과 날씨 비교 : 여러 지역과의 날씨 비교 <br/><br/><br/> 
  
  # 사용 기술
- HTML : 웹 페에지의 구조 정의
- CSS : 사용자 인터페이스 구성
- Javascript : 웹 페이지의 동적 기능 구현, API와의 상호작용
- JSON : weather API 데이터 처리, 화면에 표시
+ HTML : 웹 페에지의 구조 정의 <br/>
+ CSS : 사용자 인터페이스 구성 <br/>
+ Javascript : 웹 페이지의 동적 기능 구현, API와의 상호작용 <br/>
+ JSON : weather API 데이터 처리, 화면에 표시 <br/>
+
+
+  https://sangjihan.github.io/weather/
 
