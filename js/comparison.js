@@ -35,7 +35,7 @@ function comparisonTemp(data) {
 
     const subTemp = document.createElement("div");
     subTemp.id = "subTemp";
-    subTemp.innerHTML = subAreaTemp;
+    subTemp.innerHTML = subAreaTemp + "°C";
 
     const subIcon = document.createElement("img");
     subIcon.id = "subIcon";
