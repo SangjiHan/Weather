@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:4682B4,100:AFEEEE&height=200&text=실시간%20날씨%20정보&fontColor=FFFFFF&fontSize=40&width=700)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:4682B4,100:AFEEEE&height=200&text=실시간%20날씨%20정보&fontColor=FFFFFF&fontSize=40&width=700&fontAlignY=20)
 
 
  https://sangjihan.github.io/weather/
