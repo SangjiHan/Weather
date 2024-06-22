@@ -1,6 +1,5 @@
 window.addEventListener("load", function() {
-
-    fetchData('Yongin');
+    fetchData('seoul');
 
     let areaList = ['seoul', 'Incheon', 'Namyangju', 'Yongin', 'gangneung', 'chuncheon', 'wonju', 'cheongju', 'cheonan', 'daejeon', 'sejong', 'gwangju', 'suncheon', 'jeonju', 'pohang', 'andong', 'daegu', 'busan', 'ulsan', 'Jinju', 'jeju','ulchin'];
 
