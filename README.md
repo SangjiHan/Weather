@@ -21,7 +21,7 @@
 
 
 
- 프로젝트 기간 : 2024.06 <br/><br/><br/>  
+ <div style="font-size:20px"> 프로젝트 기간 : 2024.06 </div> <br/><br/><br/>  
 
  # :sunny:프로젝트 목표  
  사용자가 빠르고 간편하게 날씨 정보를 얻기 위함  <br/><br/><br/> 
@@ -29,15 +29,15 @@
  # :umbrella:프로젝트 설명  
  #### 사용자가 선택한 지역의 날씨 정보를 제공 <br/>
  #### openweathermap 사이트의 api를 활용하여, JSON 데이터 사용 <br/>   
- :heavy_check_mark:지역별 날씨 정보 : 현재 우리나라 지역별 날씨를 지도에 표시  
- :heavy_check_mark:상세 날씨 정보 : 지역을 클릭하면 해당 지역의 상세 날씨, 시간별 날씨, 날짜별 날씨 정보 제공  
- :heavy_check_mark:다른 지역과 날씨 비교 : 여러 지역과의 날씨 비교 <br/><br/><br/> 
+ :heavy_check_mark:  지역별 날씨 정보 : 현재 우리나라 지역별 날씨를 지도에 표시  
+ :heavy_check_mark:  상세 날씨 정보 : 지역을 클릭하면 해당 지역의 상세 날씨, 시간별 날씨, 날짜별 날씨 정보 제공  
+ :heavy_check_mark:  다른 지역과 날씨 비교 : 여러 지역과의 날씨 비교 <br/><br/><br/> 
  
  # :cloud:사용 기술
- :small_blue_diamond:HTML : 웹 페에지의 구조 정의 <br/>
- :small_blue_diamond:CSS : 사용자 인터페이스 구성 <br/>
- :small_blue_diamond: : 웹 페이지의 동적 기능 구현, API와의 상호작용 <br/>
- :small_blue_diamond:JSON : weather API 데이터 처리, 화면에 표시 <br/>
+ :small_blue_diamond:  HTML : 웹 페에지의 구조 정의 <br/>
+ :small_blue_diamond:  CSS : 사용자 인터페이스 구성 <br/>
+ :small_blue_diamond:  Javascript: 웹 페이지의 동적 기능 구현, API와의 상호작용 <br/>
+ :small_blue_diamond:  JSON : weather API 데이터 처리, 화면에 표시 <br/>
 
 
   
