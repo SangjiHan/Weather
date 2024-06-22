@@ -1,10 +1,12 @@
+![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=실시간&날씨&정보&fontSize=90)
+ 
  https://sangjihan.github.io/weather/
 
 
  ![날씨](https://github.com/SangjiHan/weather/assets/133099077/31ddbb8c-3107-44c0-ba9a-be8929283d04)
 
 
-![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=capsule%20render&fontSize=90)
+
 
  
 
