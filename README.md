@@ -3,13 +3,14 @@
 <div align = "center">
 
 <a href="https://sangjihan.github.io/weather/" target="_blank">
- <img src="https://img.shields.io/badge/JSON-778899?style=for-the-badge&color=9932CC">
+ <img src="https://img.shields.io/badge/SITE-778899?style=for-the-badge&color=000000">
 </a>
 
 </div>
 
+<br> <br>
 
-<div id="logo" style="text-align: center;">
+<div align = "center">
     <img src="https://img.shields.io/badge/HTML-0000CD?style=for-the-badge&logo=html5&logoColor=white&color=DC143C">
     <img src="https://img.shields.io/badge/css-ADD8E6?style=for-the-badge&logo=css3&logoColor=00CED1&color=000080">
     <img src="https://img.shields.io/badge/Javascript-90EE90?style=for-the-badge&logo=javascript&logoColor=FFFF00&color=808080">
