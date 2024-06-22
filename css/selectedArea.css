@@ -41,7 +41,7 @@
     position: absolute;
     background-color: white;
     animation: loadinggif 1.8s;
-    z-index: 1;
+    z-index: -1;
     opacity: 0;
 }
 
@@ -50,7 +50,8 @@
     top: 150px;
     width :200px;
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 
@@ -69,7 +70,8 @@
 }
 
 #selectedAreaLoad {
-    animation: fade-in 3s;
+    animation: notdisplay 3s;
+    z-index: 5;
     
 }
 
@@ -101,6 +103,8 @@
     vertical-align: top;
     color: #1874C3;
     padding-top: 20px;
+    z-index: 8;
+
 }
 
 #detail {
@@ -151,16 +155,16 @@
 }
 
 #hourlyWeather::-webkit-scrollbar {
-    height: 5px;
+    height: 8px;
 }
 
 #hourlyWeather::-webkit-scrollbar-thumb {
-    background-color: rgb(173, 173, 173);
-    height: 5px;
+    background-color: rgb(184, 184, 184);
+    height: 8px;
 }
 
 #hourlyWeather::-webkit-scrollbar-thumb {
-    height: 5px;
+    height: 8px;
 }
 
 
