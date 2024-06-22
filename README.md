@@ -8,8 +8,6 @@
 
 </div>
 
-<br> <br>
-
 <div align = "center">
     <img src="https://img.shields.io/badge/HTML-0000CD?style=for-the-badge&logo=html5&logoColor=white&color=DC143C">
     <img src="https://img.shields.io/badge/css-ADD8E6?style=for-the-badge&logo=css3&logoColor=00CED1&color=000080">
@@ -17,13 +15,11 @@
     <img src="https://img.shields.io/badge/JSON-778899?style=for-the-badge&logo=javascript&logoColor=FF8C00&color=9932CC">
 </div>
 
+<br> <br>
 
  ![날씨](https://github.com/SangjiHan/weather/assets/133099077/31ddbb8c-3107-44c0-ba9a-be8929283d04)
 
 
-
-
- 
 
  프로젝트 기간 : 2024.06 <br/><br/><br/>  
 
