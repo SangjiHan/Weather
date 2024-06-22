@@ -1,8 +1,12 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:4682B4,100:AFEEEE&height=200&text=실시간%20날씨%20정보&fontColor=00008B&fontSize=40&width=700&fontAlignY=35)
 
+<div align = "center">
+
 <a href="https://sangjihan.github.io/weather/" target="_blank">
-<img src="https://img.shields.io/badge/Blog-181717.svg?style=flat-square&logo=site&logoColor=white"/>
+ <img src="https://img.shields.io/badge/JSON-778899?style=for-the-badge&color=9932CC">
 </a>
+
+</div>
 
 
 <div id="logo" style="text-align: center;">
