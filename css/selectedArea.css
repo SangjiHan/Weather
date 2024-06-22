@@ -16,6 +16,43 @@
     }
   }
 
+  @keyframes loadinggif {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes notdisplay {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  #loading2 {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: white;
+    animation: loadinggif 1.8s;
+    z-index: 1;
+    opacity: 0;
+}
+
+#loading2 img {
+    position: absolute;
+    top: 150px;
+    width :200px;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
 
 #selectedArea {
     width: 400px;
@@ -33,6 +70,7 @@
 
 #selectedAreaLoad {
     animation: fade-in 3s;
+    
 }
 
 #selectedAreatitle {

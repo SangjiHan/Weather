@@ -1,3 +1,12 @@
+@keyframes loadinggif {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 #selectArea {
     width: 450px;
     border: 5px solid rgb(0, 0, 0);
@@ -6,7 +15,29 @@
     display: inline-block;
     border-radius: 20px;
     background-color: white;
-    animation: fade-in 2s;
+    animation: fade-in 3s;
+}
+
+#loading {
+    position: absolute;
+    width: 450px;
+    background-color: white;
+    height: 620px;
+    z-index: 5;
+    top: 68px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    animation: loadinggif 1.8s;
+    opacity: 0;
+}
+
+#loading img {
+    position: absolute;
+    top: 150px;
+    width :200px;
+    left: 50%;
+    transform: translateX(-50%); 
 }
 
 
@@ -35,6 +66,8 @@
     color: white;
     cursor: pointer;
     animation: load 1.2s;
+    animation: notdisplay 2s;
+    z-index: 5;
 }
 
 #seoul {
