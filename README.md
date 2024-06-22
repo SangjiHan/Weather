@@ -1,5 +1,12 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:4682B4,100:AFEEEE&height=200&text=실시간%20날씨%20정보&fontColor=778899&fontSize=40&width=700&fontAlignY=35)
 
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+	![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+ <div align=center>
+	<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white">
+    <br>
+</div>
+
  ![날씨](https://github.com/SangjiHan/weather/assets/133099077/31ddbb8c-3107-44c0-ba9a-be8929283d04)
 
 
@@ -13,7 +20,7 @@
  사용자가 빠르고 간편하게 날씨 정보를 얻기 위함  <br/><br/><br/> 
 
  # 프로젝트 설명  
- #### 사용자가 선택한 지억의 날씨 정보를 제공 <br/>
+ #### 사용자가 선택한 지역의 날씨 정보를 제공 <br/>
  #### openweathermap 사이트의 api를 활용하여, JSON 데이터 사용 <br/>   
  지역별 날씨 정보 : 현재 우리나라 지역별 날씨를 지도에 표시  
  상세 날씨 정보 : 지역을 클릭하면 해당 지역의 상세 날씨, 시간별 날씨, 날짜별 날씨 정보 제공  
