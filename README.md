@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:4682B4,100:AFEEEE&height=200&text=실시간%20날씨%20정보&fontColor=000000&fontSize=40&width=700&fontAlignY=35)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:4682B4,100:AFEEEE&height=200&text=실시간%20날씨%20예보&fontColor=000000&fontSize=40&width=700&fontAlignY=35)
 
 <div align = "center">
 
