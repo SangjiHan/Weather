@@ -1,11 +1,18 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:4682B4,100:AFEEEE&height=200&text=실시간%20날씨%20정보&fontColor=00008B&fontSize=40&width=700&fontAlignY=35)
 
+<a href="https://sangjihan.github.io/weather/" target="_blank">
+<img src="https://img.shields.io/badge/Blog-181717.svg?style=flat-square&logo=site&logoColor=white"/>
+</a>
+
+
 <div id="logo" style="text-align: center;">
     <img src="https://img.shields.io/badge/HTML-0000CD?style=for-the-badge&logo=html5&logoColor=white&color=DC143C">
     <img src="https://img.shields.io/badge/css-ADD8E6?style=for-the-badge&logo=css3&logoColor=00CED1&color=000080">
     <img src="https://img.shields.io/badge/Javascript-90EE90?style=for-the-badge&logo=javascript&logoColor=FFFF00&color=808080">
     <img src="https://img.shields.io/badge/JSON-778899?style=for-the-badge&logo=javascript&logoColor=FF8C00&color=9932CC">
 </div>
+
+
  ![날씨](https://github.com/SangjiHan/weather/assets/133099077/31ddbb8c-3107-44c0-ba9a-be8929283d04)
 
 
@@ -32,5 +39,5 @@
  JSON : weather API 데이터 처리, 화면에 표시 <br/>
 
 
-  https://sangjihan.github.io/weather/
+  
 
