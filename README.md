@@ -39,11 +39,11 @@
  :small_blue_diamond:  Javascript: 웹 페이지의 동적 기능 구현, API와의 상호작용 <br/>
  :small_blue_diamond:  JSON : weather API 데이터 처리, 화면에 표시 <br/>
 
-#글씨크기
-##글씨크기
-###글씨크기
-####글씨크기
-#####글씨크기
+# 글씨크기
+## 글씨크기
+### 글씨크기
+#### 글씨크기
+##### 글씨크기
 
   
 
